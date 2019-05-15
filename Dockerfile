@@ -12,5 +12,6 @@ RUN echo deb http://mirror.genesisadaptive.com/ubuntu/ cosmic main >> /etc/apt/s
     && cpp -v \
     && wget -q $go_download_url -O go.tar.gz \
     && tar -C /usr/local -xzf go.tar.gz \
+    && export PATH $PATH:/usr/local/go/bin \
     && echo \
     && go version
