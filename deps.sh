@@ -38,3 +38,4 @@ function main(){
 
 set -e
 if ! init||main;then echo failed;exit 1;fi
+
