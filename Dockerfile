@@ -16,4 +16,4 @@ RUN bash -c 'set -x ;\
     export PATH=$PATH:/usr/local/go/bin ;\
     go version ;\
     cc --version ;\
-    cpp --version ;\'
+    cpp --version ;'
