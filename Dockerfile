@@ -4,4 +4,4 @@ RUN echo deb http://mirror.genesisadaptive.com/ubuntu/ cosmic main >> /etc/apt/s
     && apt update \
     && apt install -y gcc g++ \
     && apt install -y make libtool git \
-    && cc --version && vpp --version
+    && cc --version && cpp --version
