@@ -1,3 +1,5 @@
 FROM ubuntu:latest
 
-RUN echo go-cross started
+RUN apt update \
+    & apt install -y gcc g++ \
+    & apt install -y make libtool git
