@@ -17,6 +17,7 @@ function init(){
 }
 
 function main(){
+    set -e
     echo "installing dependencies"
 
     silent apt update
@@ -30,8 +31,8 @@ function main(){
     export PATH=$PATH:/usr/local/go/bin
 
     execute go version
-    execute cc version
-    execute cpp version
+    execute cc --version
+    execute cpp --version
 
     echo "done"
 }
